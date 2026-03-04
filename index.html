@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Holi 2026 -- AviNav</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Canvas Confetti Library for spectacular bursts -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <!-- Canvas for interactive color powder trails -->
+    <canvas id="particleCanvas"></canvas>
+
+    <div class="background-animation"></div>
+
+    <main class="container">
+        <!-- Glassmorphism Card -->
+        <div class="glass-card">
+            <div class="content-wrapper">
+                <div class="festival-badge">Festival of Colors</div>
+                
+                <h1 class="main-title neon-text" id="greetingText">
+                    Happy Holi <span class="year-highlight">2026</span>
+                </h1>
+                
+                <p class="subtext">May your life be filled with vibrant colors, boundless joy, and endless happiness.</p>
+                
+                <!-- Personalized Greeting Section -->
+                <div class="personalize-section">
+                    <input type="text" id="nameInput" placeholder="Enter your name to wish..." maxlength="25" autocomplete="off">
+                    <button id="generateBtn" class="btn-glow action-btn">Create Wish</button>
+                </div>
+                
+                <!-- Action Controls -->
+                <div class="controls-section">
+                    <button id="celebrateBtn" class="btn-glow primary-btn">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i> Splash Color!
+                    </button>
+                    <button id="musicToggleBtn" class="btn-glow icon-btn tooltip" aria-label="Toggle Music">
+                        <i class="fa-solid fa-music"></i>
+                        <span class="tooltiptext">Play Music</span>
+                    </button>
+                    <button id="shareBtn" class="btn-glow icon-btn tooltip" aria-label="Share">
+                        <i class="fa-solid fa-share-nodes"></i>
+                        <span class="tooltiptext">Share</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Hidden audio element for background music -->
+    <!-- Place your music file inside the assets folder as holi-instrumental.mp3 -->
+    <audio id="bgMusic" loop>
+        <source src="assets/holi-instrumental.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
