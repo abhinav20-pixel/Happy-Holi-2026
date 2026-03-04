@@ -16,7 +16,7 @@ An interactive **Holi Festival Greeting Website** with colorful UI, splash anima
 
 Click here to view the project:
 
-👉 https://yourusername.github.io/happy-holi-2026/
+👉 https://abhinav20-pixel.github.io/Happy-Holi-2026/
 
 ## 🛠️ Technologies Used
 
